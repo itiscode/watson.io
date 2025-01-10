@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Watson's Adventure</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0b/Mistery_stub_2.svg" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome, Watson! 🕵️‍♂️</h1>
+    <p>Your mission: solve the adventure and discover the final surprise! 🏎️✨</p>
+
+    <div id="quiz-container">
+        <div class="question" id="question-1">
+            <p>What makes my heart race faster than an Audi RS7? 🚗❤️</p>
+            <button onclick="showPopup('Ton sourire est comme un rayon de soleil! ☀️', 'question-2')">Your smile 🌟</button>
+            <button onclick="showPopup('Le bruit de ton rire est ma mélodie préférée. ❤️', 'question-2')">The sound of your laugh ❤️</button>
+            <button onclick="showPopup('L\'éclat dans tes yeux est plus brillant que tout. 👀', 'question-2')">The sparkle in your eyes 👀</button>
+        </div>
+
+        <div class="question" id="question-2">
+            <p>How do you imagine your perfect day, like you're in an Audi? 🚘</p>
+            <button onclick="showPopup('Sur une route côtière avec une vue magnifique 🌊', 'question-3')">Coastal drive 🌊</button>
+            <button onclick="showPopup('Accélérer sur une autoroute ouverte 🚗💨', 'question-3')">Open highway 🚗💨</button>
+            <button onclick="showPopup('Se détendre et profiter de la conduite 🛋️', 'question-3')">Smooth ride 🛋️</button>
+        </div>
+
+        <div class="question" id="question-3">
+            <p>What does being the best version of yourself mean? ✨</p>
+            <button onclick="showPopup('Pousser mes limites 💪', 'question-4')">Pushing my limits 💪</button>
+            <button onclick="showPopup('Rester fidèle à moi-même 🦋', 'question-4')">Being true to myself 🦋</button>
+            <button onclick="showPopup('Profiter de chaque moment ✨', 'question-4')">Enjoying every moment ✨</button>
+        </div>
+
+        <div class="question" id="question-4">
+            <p>What’s your ideal place to relax? 🏖️</p>
+            <button onclick="showPopup('Une plage paisible 🏖️', 'question-5')">A peaceful beach 🏖️</button>
+            <button onclick="showPopup('Un chalet confortable dans les montagnes 🏔️', 'question-5')">Cozy mountain cabin 🏔️</button>
+            <button onclick="showPopup('Un spa luxueux 🧖‍♀️', 'question-5')">Luxurious spa 🧖‍♀️</button>
+        </div>
+
+        <div class="question" id="question-5">
+            <p>How do you spend your evenings? 🌙</p>
+            <button onclick="showPopup('Écouter de la musique 🎶', 'question-6')">Listening to music 🎶</button>
+            <button onclick="showPopup('Lire un bon livre 📚', 'question-6')">Reading a book 📚</button>
+            <button onclick="showPopup('Regarder des films avec des amis 🍿', 'question-6')">Watching movies 🍿</button>
+        </div>
+
+        <div class="question" id="question-6">
+            <p class="compliment">Tu es une légende, comme une Audi RS7! 🌟</p>
+            <p class="compliment">Prêt pour la dernière aventure? 🚀</p>
+            <button class="final-button" onclick="showFinalMessage()">Yes, let's go! 🚀</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup"></div>
+
+    <div class="final-message" id="final-message">
+        <p>Tu as terminé! Félicitations! 🏆 Tu es incroyable! 🌟</p>
+        <p>Continuez à être la meilleure version de vous-même. 💪</p>
+        <p>Pour plus d'aventures, visitez notre <a href="https://drive.google.com/drive/folders/1Q5ZKsBZxPD78fg3zkUatGQ3V1C4sv1Sl?usp=sharing" class="link">site web</a>.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

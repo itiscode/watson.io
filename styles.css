@@ -1,0 +1,152 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2.8rem;
+}
+
+p {
+    color: #555;
+    font-size: 1.3rem;
+}
+
+.question {
+    margin: 20px 0;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    display: none;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.final-button {
+    background-color: #28a745;
+}
+
+.final-button:hover {
+    background-color: #218838;
+}
+
+.compliment {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.final-message {
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: bold;
+    display: none;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.link {
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, .compliment, .final-message {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Heart Animation */
+.heart {
+    color: red;
+    font-size: 2rem;
+    animation: heartbeat 1s ease infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
